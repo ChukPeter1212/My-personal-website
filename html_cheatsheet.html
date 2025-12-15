@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Cheat Sheet — Chuks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">Chuks Peter Nwanjah.</a>
+      <button id="navToggle2" aria-label="Toggle navigation">☰</button>
+    </div>
+    <nav id="mainNav2" class="nav">
+      <a href="index.html">Home</a>
+      <a href="html_cheatsheet.html">HTML Cheat Sheet</a>
+      <a href="resume.html">Resume</a>
+      <a href="hobby.html">Photography</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>HTML Cheat Sheet</h1>
+
+    <section class="cheats">
+      <dl>
+        <dt>&lt;!doctype&gt;</dt>
+        <dd>Defines HTML5 document type: <code>&lt;!doctype html&gt;</code></dd>
+
+        <dt>&lt;meta charset&gt;</dt>
+        <dd>Specify encoding: <code>&lt;meta charset="utf-8"&gt;</code></dd>
+
+        <dt>&lt;link&gt;</dt>
+        <dd>Include CSS or favicons: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></dd>
+
+        <dt>&lt;nav&gt;</dt>
+        <dd>Semantic container for navigation links.</dd>
+
+        <dt>&lt;header&gt; / &lt;footer&gt;</dt>
+        <dd>Semantic page regions.</dd>
+
+        <dt>&lt;main&gt;</dt>
+        <dd>Unique main content; only one per page.</dd>
+
+        <dt>&lt;section&gt; / &lt;article&gt;</dt>
+        <dd>Group related content. Use &lt;article&gt; for self-contained pieces.</dd>
+
+        <dt>&lt;h1&gt; - &lt;h6&gt;</dt>
+        <dd>Headings: use one &lt;h1&gt; per page for accessibility.</dd>
+
+        <dt>&lt;p&gt;</dt>
+        <dd>Paragraphs. Avoid using &lt;br&gt; for layout.</dd>
+
+        <dt>&lt;a&gt;</dt>
+        <dd>Links. Add <code>rel="noopener"</code> for external links and <code>target="_blank"</code> to open in new tab.</dd>
+
+        <dt>&lt;img&gt;</dt>
+        <dd>Provide <code>alt</code> attribute for accessibility. Example: <code>&lt;img src="photo.jpg" alt="Photo description"&gt;</code></dd>
+
+        <dt>&lt;ul&gt; / &lt;ol&gt; / &lt;li&gt;</dt>
+        <dd>Lists — use for structured items.</dd>
+
+        <dt>&lt;table&gt;</dt>
+        <dd>Tabular data: use <code>&lt;thead&gt;&lt;tbody&gt;&lt;caption&gt;</code> for accessibility.</dd>
+
+        <dt>&lt;form&gt; &lt;input&gt; &lt;label&gt;</dt>
+        <dd>Forms: pair inputs with labels using <code>for</code> and <code>id</code>.</dd>
+
+        <dt>&lt;button&gt;</dt>
+        <dd>Interactive button; avoid using &lt;div&gt; as a button.</dd>
+
+        <dt>ARIA roles</dt>
+        <dd>Use role attributes to improve screen reader experience when semantic HTML is not enough.</dd>
+
+        <dt>&lt;picture&gt; &lt;source&gt;</dt>
+        <dd>Responsive images with different sizes/formats.</dd>
+
+        <dt>&lt;script&gt;</dt>
+        <dd>Include JavaScript. Prefer placing before <code>&lt;/body&gt;</code> or use <code>defer</code>.</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Quick code example</h2>
+      <pre><code>&lt;button id="likeBtn"&gt;Like&lt;/button&gt;
+&lt;script&gt;
+  document.getElementById('likeBtn').addEventListener('click', () =&gt; {
+    alert('Thanks for the like!');
+  });
+&lt;/script&gt;</code></pre>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Cheat sheets — keep them updated as you learn.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

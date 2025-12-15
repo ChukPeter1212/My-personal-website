@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Photography — Chuks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">Chuks N.</a>
+      <button id="navToggle4" aria-label="Toggle navigation">☰</button>
+    </div>
+    <nav id="mainNav4" class="nav">
+      <a href="index.html">Home</a>
+      <a href="html_cheatsheet.html">HTML Cheat Sheet</a>
+      <a href="resume.html">Resume</a>
+      <a href="hobby.html">Photography</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Photography</h1>
+    <p>My hobby is photography. Below is a small responsive gallery. Click any image to open a larger view.</p>
+
+    <div class="gallery" id="gallery">
+      <figure tabindex="0">
+        <img src="images/img_1.jpg" alt="Michael teaching 1">
+        <figcaption>Michaelteaching 1</figcaption>
+      </figure>
+      <figure tabindex="0">
+        <img src="images/img_03.jpg" alt="Calgary tower & the bow 2">
+        <figcaption>Calgarytower&thebow 2</figcaption>
+      </figure>
+      <figure tabindex="0">
+        <img src="images/img_04.jpg" alt="Myself & artwork @ bow valley college 3">
+        <figcaption>Myself&artwork@bowvalleycollege 3</figcaption>
+      </figure>
+    </div>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <img id="modalImg" alt="">
+      <p id="modalCaption"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
